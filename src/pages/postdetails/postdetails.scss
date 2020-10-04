@@ -1,0 +1,17 @@
+.post-details{
+    h2{
+        margin-bottom:30px;
+        font-size:3rem;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 767.98px) {
+   .post-details{
+        h2{
+            font-size:2rem;
+            margin-top:30px;
+            margin-bottom:20px;
+        }
+    } 
+}
