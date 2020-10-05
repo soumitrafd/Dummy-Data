@@ -20,7 +20,7 @@ const Card = ({cardData:{id, title, body, imgSrc}, postHandle}) => {
                 }
                 
             </div>
-            <div className="card-overlay" onClick={()=>postHandle({title, body, imgSrc})}>
+            <div className="card-overlay" onClick={()=>postHandle({id, title, body, imgSrc})}>
                 
             </div>
         </div>

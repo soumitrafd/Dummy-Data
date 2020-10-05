@@ -4,7 +4,7 @@ import Header from './common/header/header';
 import Posts from './pages/posts/posts';
 import PostDetails from './pages/postdetails/postdetails';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -14,18 +14,13 @@ function App() {
    <>
    <Header/>
    <main className="container">
-   <Router>
-    <Switch>
-      <Route path="/" exact>
-        <Posts/>
-      </Route>
-      <Route path="/post">
-        <PostDetails/>
-      </Route>
-    </Switch>
+   <Router basename='/'>
+      <Switch>
+        <Route exact path='/' component={Posts}/>
+        <Route path='/post/:id' component={PostDetails}/>
+      </Switch>
     </Router>
    </main>
-   
    </>
   );
 }

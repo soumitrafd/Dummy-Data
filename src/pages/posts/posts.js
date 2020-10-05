@@ -30,10 +30,7 @@ const Posts = () => {
 
     //Redirect to post details page
     const postHandle = (pData) => {
-        history.push({
-            pathname: '/post',
-            state: {...pData}
-        });
+        history.push(`/post/${pData.id}`);
     }
 
     

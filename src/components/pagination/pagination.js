@@ -29,7 +29,7 @@ const Pagination = ({postsPerPage, totalPost, paginate}) => {
     return(
         <nav aria-label="Page navigation example">
             <ul className="pagination">
-                <li className={"page-item" + (currentPagination == 1 && " disabled")}>
+                <li className={"page-item" + (currentPagination === 1 && " disabled")}>
                     <a className="page-link" onClick={() => prev()} aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         <span className="sr-only">Previous</span>
